@@ -1,0 +1,331 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #000000;
+}
+
+.inicio{
+    padding: 10px;
+}
+
+.wrapper {
+    width: 90%;
+    margin-left: 20px;
+    overflow:hidden;
+    padding: 10px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.9);
+    width: 110%;
+    position: fixed;
+    z-index: 10;
+}
+
+nav {
+    float: right;
+    padding: 12px;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden; 
+}
+
+.logo{
+    color: #fff;
+    font-family: 'Pixelation';
+    padding: 5px;
+}
+
+.glitch {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+  
+    text-shadow: 0.05em 0 0 #00ffff,
+      -0.025em -0.05em 0 #ff00ff,
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+}
+
+.logo2{
+    line-height : 25px;
+    color: #ff00ff;
+    margin-left: 60px;
+    width: 10px;
+}
+
+.logo2 {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    font: normal 30px/normal "Warnes", Helvetica, sans-serif;
+    color: rgba(255,255,255,1);
+    text-decoration: normal;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: pre;
+    text-shadow: 0 0 5px #FF43F1 , 0 0 10px #FF43F1 , 0 0 10px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+  
+.logo2:hover {
+    text-shadow: 0 0 10px #8488f4 , 0 0 10px #8488f4, 0 0 10px rgba(255, 255, 255, 0.774) , 0 0 40px #8488f4 , 0 0 70px #8488f4 , 0 0 80px #8488f4 , 0 0 100px #8488f4;
+}
+  
+nav ul li {
+    float: left;
+    font-family: 'Disket Mono';
+    font-size: 16px;
+}
+  
+nav ul li {
+    display: block; 
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.ancla{
+    display: block; 
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+
+}
+   .ancla:hover {
+    background: #8488f4;
+    border-radius:25px;
+}
+
+.contenido {
+    padding-top: 200px;
+    color: #fff;
+}
+
+h3 {
+    margin: 30px;
+    font-family: 'Montserrat Thin';
+
+    
+ } 
+ 
+.en{
+    margin: 30px;
+    color: #ffffff;
+    font-weight: 300;
+    text-decoration: none;
+    text-shadow: 0 0 5px #1FAED4 , 0 0 5px #1FAED4 , 0 0 5px rgba(255,255,255,1) , 0 0 40px #1FAED4 , 0 0 70px #1FAED4 , 0 0 80px #1FAED4 , 0 0 100px #1FAED4 ;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    
+}
+
+.en:hover{
+     background:none;
+}
+
+ b{
+    font-family: 'Montserrat Thin';
+    font-size: 20px;
+
+}
+ 
+ h2 {
+    font-family: 'Montserrat Thin';
+    text-align: center;
+    margin: 5px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #1FAED4 , 0 0 5px #1FAED4 , 0 0 5px rgba(255,255,255,1) , 0 0 40px #1FAED4 , 0 0 70px #1FAED4 , 0 0 80px #1FAED4 , 0 0 100px #1FAED4 ;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  
+  
+.apa {
+    width: 500px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid #1FAED4;     
+    box-shadow: 0 0 5px #1FAED4;
+    font-family: 'Montserrat Thin';
+}
+
+.apa:hover {
+    border:2px solid #21EF80;
+}
+
+.slider{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    animation: cambio 10s infinite alternate;
+    width: 200%;
+   
+}
+
+.slider li{
+width: 50%;
+list-style: none;
+}
+
+.slider img{
+    width: 45%;
+
+
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    50%{margin-left: 0;}
+      
+    55%{margin-left: -100%;}
+    100%{margin-left: -100%;}
+        
+}
+
+@media only screen and (min-width:320px) and (max-width:320px){
+.slider, .slider ul, .slider img{
+    height: 100vh;
+}
+}
+
+.sliderr {
+    width: 100%; 
+    height: 750px;
+    overflow: hidden;
+  }
+  
+  .ull {
+    display: flex;
+    animation: cambio 15s infinite alternate;
+    width: 400%; 
+    height: 100%;
+  }
+  
+  .lii {
+    flex: 0 0 calc(100% / 4); 
+    list-style: none;
+  }
+  
+  .sliderr img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @keyframes cambio {
+    0% {
+      margin-left: 0;
+    }
+    25% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: -100%;
+    }
+    75% {
+      margin-left: -200%;
+    }
+    100% {
+      margin-left: -300%; 
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .lii {
+      height: 100vh;
+      flex-basis: 100%;
+    }
+    .ull {
+      width: 100%;
+    }
+  }
+  
+  
+  
+
+
+
+
+
+.img {
+    display: block;
+    margin-top: 10px;
+}
+
+.des{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Disket Mono';
+}
+
+
+.h3{
+    font-family: 'Disket Mono';
+    text-align: center;
+}
+.ap{
+    width: 800px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid #1FAED4;     
+    box-shadow: 0 0 5px #1FAED4;
+    font-family: 'Montserrat Thin';
+}
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.cards .card{
+    background: #1FAED4;
+    display: flex;
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    margin: 0 30px;
+}
+
+.cards .card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #1FAED4;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #ffffff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}

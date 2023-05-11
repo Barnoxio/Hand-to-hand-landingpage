@@ -1,0 +1,28 @@
+.content{
+ width: 940px;
+ padding: 10px;
+ margin: auto;
+}
+
+.titulo{
+   color: #1FAED4;
+}
+  
+.parrafo{
+ text-align: justify;
+ border: solid 1px;
+ border-color: #1FAED4;
+ background-color: white;
+ padding: 20px;
+ font-family: 'Montserrat Thin';
+ height: 100px;
+  width: 300px;   
+}
+  
+    
+body div p a{
+ text-decoration: none;
+ color: #1FAED4;
+ font-family: 'Disket Mono';
+}
+

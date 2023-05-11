@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HAND TO HAND HARMONY </title>
+    <link rel="shortcut icon" href="imagenes/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/prueba.css">
+
+
+<script> 
+    
+    var current = 0;
+var imagenes = new Array();
+ 
+$(document).ready(function() {
+    var numImages = 6;
+    if (numImages <= 3) {
+        $('.right-arrow').css('display', 'none');
+        $('.left-arrow').css('display', 'none');
+    }
+ 
+    $('.left-arrow').on('click',function() {
+        if (current > 0) {
+            current = current - 1;
+        } else {
+            current = numImages - 3;
+        }
+ 
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+ 
+        return false;
+    });
+ 
+    $('.left-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+ 
+    $('.right-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+ 
+    $('.right-arrow').on('click', function() {
+        if (numImages > current + 3) {
+            current = current+1;
+        } else {
+            current = 0;
+        }
+ 
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+ 
+        return false;
+    }); 
+ });
+</script>
+    
+<script> 
+      function vermas(id){
+      if(id=="mas"){
+      document.getElementById("desplegar").style.display="block";   
+      document.getElementById("mas").style.display="none"; 
+      }
+      else{
+      document.getElementById("desplegar").style.display="none";
+      document.getElementById("mas").style.display="inline";
+      }
+      }
+
+
+      function vermass(id){
+      if(id=="mass"){
+      document.getElementById("desplegarr").style.display="block";   
+      document.getElementById("mass").style.display="none"; 
+      }
+      else{
+      document.getElementById("desplegarr").style.display="none";
+      document.getElementById("mass").style.display="inline";
+      }
+      }
+      function vermasss(id){
+      if(id=="masss"){
+      document.getElementById("desplegarrr").style.display="block";   
+      document.getElementById("masss").style.display="none"; 
+      }
+      else{
+      document.getElementById("desplegarrr").style.display="none";
+      document.getElementById("masss").style.display="inline";
+      }
+      }
+
+      function vermassss(id){
+      if(id=="massss"){
+      document.getElementById("desplegarrrr").style.display="block";   
+      document.getElementById("massss").style.display="none"; 
+      }
+      else{
+      document.getElementById("desplegarrrr").style.display="none";
+      document.getElementById("massss").style.display="inline";
+      }
+      }
+</script>
+
+<header>
+    <div class="inicio">     
+        <section class="wrapper">
+            <h1 class="logo"><p class="glitch"> HAND-TO-HAND </p></h1>
+            <h2 class="logo2">HARMONY </h2>
+          <div style="text-align: right;
+          padding: px 50px 0 0;">> 
+            <nav>
+              <ul> 
+              <li><a class="ancla" href="#inicio" style="position: absolute; left: calc(46% - 2px); top: calc(60px - 10px);"> Inicio </a></li>
+              <li><a class="ancla" href="#sinopsis" style="position: absolute; left: calc(53% - 2px); top: calc(60px - 10px);"> Sinopsis </a></li> 
+              <li><a class="ancla" href="#manual" style="position: absolute; left: calc(62% - 2px); top: calc(60px - 10px);"> Manual </a></li> 
+              <li><a class="ancla" href="#descargar" style="position: absolute; left: calc(69% - 2px); top: calc(60px - 10px);"> Descargar </a></li> 
+              <li><a class="ancla" href="#contacto" style="position: absolute; left: calc(78% - 2px); top: calc(60px - 10px);"> Contactanos </a></li>             
+              </ul>
+            </nav>
+          </div>
+        </section>
+    </div>
+  </header>
+
+
+
+  
+<a name="inicio"><section class="contenido wrapper">
+  
+  <div style=" margin-left: 10%;">
+    <div class="sliderr " >
+      <ul class="ull" >
+          <li class="lii">
+              <img class="imgg" src="Imagenes/fondo1.png">
+          </li>
+          <li  class="lii">
+              <img class="imgg" src="Imagenes/ESCENARIO-1.png">
+          </li>
+          <li class="lii">
+              <img class="imgg" src="Imagenes/ESCENARIO-2.png">
+          </li>
+          <li class="lii">
+            <img class="imgg" src="Imagenes/ESCENARIO-5.png">
+        </li>
+
+      </ul>
+    </div>
+   </div>
+  </div></br></br></br></br>
+
+
+        <div class="apa" style="margin-left: 18%;">
+          <h2 style="font-family: Montserrat Thin;"> Introducción</h2>
+          <h3>En la actualidad, diversas plataformas y aplicaciones, especialmente 
+            los videojuegos se han creado para proporcionar a sus usuarios una 
+            experiencia de calidad al momento de ejecutarlos desde la comodidad de 
+            su móvil u ordenador, no obstante, los juegos más populares en la red 
+            no pueden ser disfrutados por ciertos grupos debido a sus diversidades 
+            funcionales. </h3>
+          <a class="en" href="#" onclick="vermas('mas');" id="mas">LEER MAS </a>
+        </p>
+         <p  id="desplegar" style="display:none; margin: 30px;">
+          
+          <b >Entre estos grupos se encuentra la comunidad sordaue en general no 
+            acceden a varias actividades o no pueden realizarlas como se prevé en un inicio.
+            ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+            Considerando esta realidad, nos hemos propuesto
+            a desarrollar un videojuego  que aborda la forma básica de comunicación de 
+            la Comunidad Sorda, de tal manera que se pueda interactuar en el juego con 
+            el abecedario en señas, sustituyendo a los controles comunes del teclado 
+            que se usan en juegos de PC. 
+            ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+            El videojuego será destinado principalmente para los integrantes del Grupo de 
+            Estudio de Aproximación a la Sordera, no obstante, también puede ser manejado 
+            por familias que quieran y busquen aprender a relacionarse con una persona no 
+            oyente, utilizando el método de mando propio del juego.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ 
+
+            Debido a que queremos contribuir en normalizar la integración de esta comunidad 
+            en la sociedad, nuestro videojuego no tendrá fines de lucro, puesto que lo vemos 
+            como una herramienta capaz de aportar a algo más grande y beneficioso para todos. 
+            ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+            “Una persona sorda puede hacer cualquier cosa igual que un oyente, excepto oír” (King Jordan)ㅤㅤㅤ
+            ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+            </b>
+          <a class="en" href="#" onclick="vermas('menos');" id="menos">LEER MENOS</a>
+          </p> 
+        
+        </div>
+
+
+
+
+         <div class="apa" style="margin-left: 10%;">
+          <h2> Resumen </h2>
+          <h3 > Hand-to-hand Harmony, es un videojuego 2D con estilo pixel, orientado 
+            y conceptualizado en la Comunidad Sorda. Su creación pretende ser una 
+            alternativa para aquellos que deseen aprender sobre el Alfabeto Dactilológico 
+            de la Lengua de Señas Ecuatoriana, de una manera sencilla e interesante, 
+            para así crear una cercanía con familiares.</h3>
+            <a class="en" href="#" onclick="vermass('mass');" id="mass">LEER MAS </a>
+          
+           <p  id="desplegarr" style="display:none; margin: 30px;">
+            
+            <b >El presente producto se compone de dos programas: un teclado virtual y 
+              el videojuego. Por una parte, el teclado virtual fue desarrollado en Phyton, 
+              lenguaje de programación que permite el uso de librerías necesarias para la 
+              detección de gestos dactilológicos, por medio de una serie de coordenadas, 
+              líneas y puntos; dejando de lado el manejo del teclado, e implementando el 
+              uso de cámara. Mientras que el videojuego, utiliza este medio para controlar 
+              el movimiento de los personajes, en base al alfabeto dactilológico de la 
+              Lengua de Señas Ecuatoriana, exceptuando las letras que requieran un movimiento 
+              en particular.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+              Hand-to-Hand Harmony se desarrolla en el planeta 327, donde habitan distintas 
+              especies con alta sensibilidad en los sentidos humanos. Singmark, el protagonista 
+              del juego, tendrá que superar varios “minijuegos” en relación a sus antepasados: 
+              los yentaxinos y los sortkuos, con el objetivo de revelar la verdad oculta tras 
+              varios siglos y así crear la tan anhelada utopía de paz entre especies.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+              Finalmente, se desarrolló una Landing Page destinada para la distribución de los 
+              ejecutables mencionados, para que puedan ser descargados en un Sistema Operativo 
+              Windows de 64 bits. Así como también, todo lo relacionado con el Grupo de Estudio 
+              de Aproximación a la Comunidad Sorda; información acerca del juego, y conceptos 
+              relacionados al mismo.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+              ㅤㅤㅤㅤㅤㅤ
+            </b>
+          
+            <a class="en" href="#" onclick="vermass('menos');" id="menos">LEER MENOS</a>
+            </p>
+        </div>
+  </section></a>
+
+
+<a name="sinopsis"><section class="contenido wrapper">
+   
+      <div style="display: flex; flex-direction: row;">
+        <div style="width: 50%;">
+          <h2>Sinopsis</h1>
+          <h3 >En la actualidad, diversas plataformas y aplicaciones, especialmente 
+            los videojuegos se han creado para proporcionar a sus usuarios una 
+            experiencia de calidad al momento de ejecutarlos desde la comodidad de 
+            su móvil u ordenador, no obstante, los juegos más populares en la red 
+            no pueden ser disfrutados por ciertos grupos debido a sus diversidades 
+            funcionales; entre estos grupos se encuentra la comunidad sorda, que en 
+            general no acceden a varias actividades o no pueden realizarlas como se 
+            prevé en un inicio.. <br> 
+            Considerando esta realidad, nos hemos propuesto a desarrollar un videojuego 
+            que aborda la forma básica de comunicación de la Comunidad Sorda, de tal 
+            manera que se pueda interactuar en el juego con el abecedario en señas, 
+            sustituyendo a los controles comunes del teclado que se usan en juegos de PC.</h3>           
+            <a class="en" name="ver" href="#ver" onclick="vermasss('masss');" id="masss">LEER MAS </a>
+        
+            <p  id="desplegarrr" style="display:none; margin: 30px;">
+           <b><br>El videojuego será destinado principalmente para los integrantes del Grupo de 
+            Estudio de Aproximación a la Sordera, no obstante, también puede ser manejado 
+            por familias que quieran y busquen aprender a relacionarse con una persona no 
+            oyente, utilizando el método de mando propio del juego.
+            <br>Debido a que queremos contribuir en normalizar la integración de esta comunidad 
+            en la sociedad, nuestro videojuego no tendrá fines de lucro, puesto que lo vemos 
+            como una herramienta capaz de aportar a algo más grande y beneficioso para todos.<br>
+            “Una persona sorda puede hacer cualquier cosa igual que un oyente, excepto oír” (King Jordan)ㅤㅤㅤ
+            ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</b>
+            <a class="en" href="#ver" onclick="vermasss('menos');" id="menos">LEER MENOS</a>
+            </p>
+        </div>
+      
+      
+
+          <div style="width: 50%;">
+            <div class="slider " >
+          
+              <ul>
+                  <li>
+                     <center> <img   src="imagenes/imagen-1.png"></center>
+                  </li>
+                  <li>
+                     <center> <img src="imagenes/imagen-2.png"></center>
+                  </li>
+                 
+              </ul>
+           </div>
+          </div>
+          
+      </div>
+</section></a>
+
+
+<a name="manual"><section class="contenido wrapper">
+
+    <div class="apa" style="margin-left: 18%;">
+      <h2> Teclado virtual </h2>
+      <h3>En la actualidad, diversas plataformas y aplicaciones, especialmente 
+        los videojuegos se han creado para proporcionar a sus usuarios una 
+        experiencia de calidad al momento de ejecutarlos desde la comodidad de 
+        su móvil u ordenador, no obstante, los juegos más populares en la red 
+        no pueden ser disfrutados por ciertos grupos debido a sus diversidades 
+        funcionales. </h3>
+      <a class="en" href="#" onclick="vermas('mas');" id="mas">LEER MAS </a>
+    </p>
+     <p  id="desplegar" style="display:none; margin: 30px;">
+      
+      <b >Entre estos grupos se encuentra la comunidad sordaue en general no 
+        acceden a varias actividades o no pueden realizarlas como se prevé en un inicio.
+        ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+        Considerando esta realidad, nos hemos propuesto
+        a desarrollar un videojuego  que aborda la forma básica de comunicación de 
+        la Comunidad Sorda, de tal manera que se pueda interactuar en el juego con 
+        el abecedario en señas, sustituyendo a los controles comunes del teclado 
+        que se usan en juegos de PC. 
+        ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+        El videojuego será destinado principalmente para los integrantes del Grupo de 
+        Estudio de Aproximación a la Sordera, no obstante, también puede ser manejado 
+        por familias que quieran y busquen aprender a relacionarse con una persona no 
+        oyente, utilizando el método de mando propio del juego.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ 
+
+        Debido a que queremos contribuir en normalizar la integración de esta comunidad 
+        en la sociedad, nuestro videojuego no tendrá fines de lucro, puesto que lo vemos 
+        como una herramienta capaz de aportar a algo más grande y beneficioso para todos. 
+        ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+        “Una persona sorda puede hacer cualquier cosa igual que un oyente, excepto oír” (King Jordan)ㅤㅤㅤ
+        ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+        </b>
+      <a class="en" href="#" onclick="vermas('menos');" id="menos">LEER MENOS</a>
+      </p> 
+    
+    </div>
+
+
+
+
+     <div class="apa" style="margin-left: 10%;">
+      <h2> Video juego </h2>
+      <h3 > Hand-to-hand Harmony, es un videojuego 2D con estilo pixel, orientado 
+        y conceptualizado en la Comunidad Sorda. Su creación pretende ser una 
+        alternativa para aquellos que deseen aprender sobre el Alfabeto Dactilológico 
+        de la Lengua de Señas Ecuatoriana, de una manera sencilla e interesante, 
+        para así crear una cercanía con familiares.</h3>
+        <a class="en" href="#" onclick="vermass('mass');" id="mass">LEER MAS </a>
+      
+       <p  id="desplegarr" style="display:none; margin: 30px;">
+        
+        <b >El presente producto se compone de dos programas: un teclado virtual y 
+          el videojuego. Por una parte, el teclado virtual fue desarrollado en Phyton, 
+          lenguaje de programación que permite el uso de librerías necesarias para la 
+          detección de gestos dactilológicos, por medio de una serie de coordenadas, 
+          líneas y puntos; dejando de lado el manejo del teclado, e implementando el 
+          uso de cámara. Mientras que el videojuego, utiliza este medio para controlar 
+          el movimiento de los personajes, en base al alfabeto dactilológico de la 
+          Lengua de Señas Ecuatoriana, exceptuando las letras que requieran un movimiento 
+          en particular.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+          Hand-to-Hand Harmony se desarrolla en el planeta 327, donde habitan distintas 
+          especies con alta sensibilidad en los sentidos humanos. Singmark, el protagonista 
+          del juego, tendrá que superar varios “minijuegos” en relación a sus antepasados: 
+          los yentaxinos y los sortkuos, con el objetivo de revelar la verdad oculta tras 
+          varios siglos y así crear la tan anhelada utopía de paz entre especies.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+          Finalmente, se desarrolló una Landing Page destinada para la distribución de los 
+          ejecutables mencionados, para que puedan ser descargados en un Sistema Operativo 
+          Windows de 64 bits. Así como también, todo lo relacionado con el Grupo de Estudio 
+          de Aproximación a la Comunidad Sorda; información acerca del juego, y conceptos 
+          relacionados al mismo.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+          ㅤㅤㅤㅤㅤㅤ
+        </b>
+      
+        <a class="en" href="#" onclick="vermass('menos');" id="menos">LEER MENOS</a>
+        </p>
+    </div>
+</section></a>
+
+<a name="descargar"><section class="contenido wrapper">
+   
+  <div style="display: flex; margin-left: 8%;">
+    
+    <div style="width: 33.33%;">
+      <h2 style="font-family: Montserrat Thin;"> Teclado virtual </h2>
+      <img style="width: 60%; margin-left: 20%;" src="Imagenes/lenguaje-de-senas.png">
+     <center> <a class="des" href="https://www.mediafire.com/" style="font-size: 20px; color: white;">Descargar</a></center>
+    </div>
+  
+    <div style="width: 33.33%; margin-right: 20px; border:3px solid #1FAED4; border-radius:22px;"></br>
+      <h2 style="font-family: Montserrat Thin;"> Precio </h2>
+      <h3 style="font-family: 'Disket Mono'; text-align: center; font-size: 40px;"> Gratis </h3>
+      <br><h3 style="font-family: 'Disket Mono'; text-align: center; font-size: 20px ;"> Requisitos: </h3>
+      <h3 style="font-family: 'Disket Mono'; text-align: center; font-size: 20px ;"> entrada de video </h3>
+      <h3 style="font-family: 'Disket Mono'; text-align: center; font-size: 20px ;"> windows 10 </h3></br>
+      <br><h3 style="font-family: 'Disket Mono'; text-align: center; font-size: 20px ;"> 64 bits </h3></br>
+    </div>
+  
+    <div style="width: 33.33%;">
+      <h2 style="font-family: Montserrat Thin;"> Teclado virtual </h2>
+      <img style="width: 60%; margin-left: 20%;" src="Imagenes/lenguaje-de-senas.png">
+      <center><a class="des" href="https://www.mediafire.com/" style="font-size: 20px; color: white;">Descargar</a></center>
+    </div>
+  </div>
+  
+</section></a>
+
+
+<a name="contacto"><section class="contenido wrapper">
+  <h2 class="titulo" style="margin-left: 8%;"> Contactanos </h2></br>
+  <div class="cards" style="margin-left: 8%;">
+    <div class="card">
+        <div ></br>
+            <h1 style="font-family: 'Montserrat Thin'; text-align: center;" >Grupo de Estudio Aproximación a la Sordera</h1></br>
+            <h3 >El Grupo de Estudio Aproximación a la Sordera es un espacio de encuentro en 
+              profesionales y apasionados por el mundo de la sordera, sordos y oyentes, que 
+              tienen por objetivo discutir y reflexionar al rededor de la Cultura Sorda, la 
+              Comunidad sorda y la Lengua de Señas Ecuatoriana.</h3>
+              <a class="en" name="verr" href="#verr" onclick="vermassss('massss');" id="massss">LEER MAS </a>
+
+            <p  id="desplegarrrr" style="display:none; margin: 30px;">
+              <b>  Realiza encuentros entre sus 
+              miembros donde se revisan y debaten temáticas relacionadas con la educación, 
+              la inclusión laboral y los derechos de las Personas Sordas en Ecuador. </br>
+              
+              Además, se proponen proyectos y asesorías en temas de inclusión y accesibilidad, 
+              siempre considerando los principios de la Convención Internacional sobre los 
+              Derechos de las Personas con Discapacidad.</b></br>
+              <a class="en" href="" onclick="vermassss('menos');" id="menos">LEER MENOS</a>
+            </p> 
+            
+        </div>
+    </div>
+    <div class="card">
+        <img  src="Imagenes/whatsapp.png" alt="">
+        <div class="contenido-texto-card"></br>
+            <h1  style="font-family: 'Montserrat Thin'; text-align: center;"> Whatssap </h1>
+            <h3>Grupo de Estudio Aproximación a la Sordera 0963869529
+              Psi. Cl. Raúl Francisco Lara Barba 0995450960
+              Integrantes: 
+              Ps. Cl. Raúl Lara - Coordinador
+              Diana Peñaloza PhD - Coordinadora
+              Alejandro Ortiz - Asistente
+               Elena Carrera - Consultora</h3>
+        </div>
+    </div>
+</div>
+</section></a>
+
+
+
+
+
+  
+
+
+
+
+  
+  </head>
+  </html>
